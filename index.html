@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Questions</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="pageTitle">
+            Questions
+        </h1>
+
+        <p id="questionProgress">
+            Loading...
+        </p>
+
+        <h2 id="questionText">
+            Loading question...
+        </h2>
+
+        <p id="conditionInstruction">
+            Please wait...
+        </p>
+
+        <textarea
+            id="textInput"
+            maxlength="300"
+            placeholder="Type your answer here..."
+        ></textarea>
+
+        <p id="characterCount">
+            Characters: 0 / 300
+        </p>
+
+        <button id="submitButton">
+            Submit
+        </button>
+
+        <p
+            id="completionMessage"
+            style="display: none;"
+        >
+            Your participation has been recorded.
+        </p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="tracker.js"></script>
+
+</body>
+
+</html>
